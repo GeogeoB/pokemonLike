@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'pixelFont';
+	src: url(./src/font/Pixeled.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'pixelFont';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pseudoBorder {
+    height: 100px;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+
+    border-left: 17px solid #6060C0;
+    border-right: 17px solid #6060C0;
+    border-top: 5px solid #6060C0;
+    border-bottom: 5px solid #6060C0;
+    border-radius: 5px;
+}
+
+#pseudoIn{
+    width: fit-content;
+    outline-style: solid;
+    outline-color: #6060C0;
+    outline-width: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-right: 70px;
+    padding-left: 70px;
+    height: 100%;
+
+}
+
+#formDiv {
+    margin-left: 60px;
+}
+
+#formDiv > form {
+    display: flex;
+    flex-direction: column;
+}
+
+#img--pseudo--character{
+    width: 45px;
+}
+
+#pseudoInput{
+    font-size: 12px;
+    border: none;
+    font-weight: bold;
+    border-bottom: 5px dashed black;
+}
+
+#pseudoInput:focus-visible{
+    outline: none;
+}
+
+#submitButton{
+    display: none;
+}
+
